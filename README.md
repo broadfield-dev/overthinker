@@ -75,13 +75,12 @@ Ever spent hours overthinking a decision? Overthinker turns that into a feature.
 
 ```bash
 git clone https://github.com/broadfield-dev/overthinker.git
-cd Overthinker_Hackathon
 ```
 
 2. **Install dependencies**
 
 ```bash
-pip install gradio
+pip install -r requirements.txt
 ```
 
 3. **Set environment variables**
@@ -97,6 +96,7 @@ HF_DATASET_REPO=your-username/overthinker-traces  # optional, for trace sharing
 4. **Run the app**
 
 ```bash
+cd Overthinker_Hackathon
 python app.py
 ```
 
@@ -155,7 +155,7 @@ Overthinker_Hackathon/
 │   └── index.html         # Full D3 tree visualization (~1800 lines)
 ├── data/                  # Created automatically for per-session SQLite DBs
 ├── README.md              # This file
-└── requirements.txt       # (to be added — include gradio, fastapi, uvicorn, httpx, jinja2, datasets)
+└── requirements.txt       # (include gradio, requests, datasets, python-dotenv)
 ```
 
 ---
